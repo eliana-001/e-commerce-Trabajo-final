@@ -1,0 +1,39 @@
+:root{
+--bg: #EEE4D9;
+--accent: #EA5C5A;
+--trad: #C16653;
+--cta: #DB442B;
+--ink: #262421;
+}
+
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:12px 6px;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:700;
+}
+.logo-mark{
+width:56px;
+height:56px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(234,92,90,0.03);
+border:1px solid rgba(38,36,33,0.06);
+}
+.logo-text .brand{font-size:18px}
+.logo-text .ramen{color:var(--accent);font-size:18px}
+.nav{display:flex;gap:18px;align-items:center;font-size:15px}
+.nav a{text-decoration:none;color:var(--ink);padding:6px 8px;border-radius:10px}
+.nav a.active{border-bottom:2px solid var(--trad)}
+.cta{
+background:var(--cta);color:white;padding:10px 16px;border-radius:40px;border:none;cursor:pointer;font-weight:600;
+}

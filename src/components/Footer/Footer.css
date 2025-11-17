@@ -1,0 +1,17 @@
+:root{
+--trad: #C16653;
+}
+
+
+.footer{
+margin-top:28px;
+padding:18px;
+border-radius:12px;
+background:var(--trad);
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.links{display:flex;gap:12px}
+.links a{text-decoration:none;color:white}
