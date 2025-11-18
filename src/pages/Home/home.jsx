@@ -1,6 +1,6 @@
 
 import '/workspaces/e-commerce-Trabajo-final/src/pages/Home/home.css';
-
+import miImagen from '/workspaces/e-commerce-Trabajo-final/src/assets/img/descarga.jpg';
 
 export default function Home() {
     return (
@@ -17,7 +17,7 @@ export default function Home() {
                     </div>
                     <div className="hero-right">
                         <div className="illustration-wrap">
-                            <img src="/workspaces/e-commerce-Trabajo-final/src/assets/img/descarga.jpg" alt="ramen" />
+                            <img src={miImagen}/>
                         </div>
                     </div>
                 </section>

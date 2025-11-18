@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import Menu from '../../pages/Menu/menu';
 
 
 export default function Header(){
@@ -20,7 +21,7 @@ return (
 
 <nav className="nav" aria-label="Main navigation">
 <a className="active" href="#">Home</a>
-<a href="#menu">Menu</a>
+<a href={Menu}>Menu</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 <button className="cta">Order Now</button>

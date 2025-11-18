@@ -1,0 +1,72 @@
+/* Estilos para el componente ProductCard (carrito) */
+.pcart-root { position: relative; display: inline-block; }
+
+.pcart-toggle {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.pcart-icon { display: block; }
+
+.pcart-badge {
+  background: var(--primary-color, #e63946);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.pcart-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  background: var(--card-bg, #fff);
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  padding: 0.5rem;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+}
+
+.pcart-head {
+  display:flex; align-items:center; justify-content:space-between; gap:0.5rem; padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+}
+
+.pcart-close { background: transparent; border: none; font-size: 1.25rem; cursor:pointer; }
+
+.pcart-empty { padding: 1rem; color: rgba(0,0,0,0.6); }
+
+.pcart-items { display:flex; flex-direction:column; gap:0.5rem; max-height: 320px; overflow:auto; padding-right: 4px; }
+
+.pcart-item { display:flex; gap:0.5rem; align-items:center; padding:0.4rem; border-radius:8px; }
+
+.pcart-thumb { width:56px; height:48px; object-fit:cover; border-radius:6px; flex-shrink:0; }
+
+.pcart-meta { flex:1; min-width:0; }
+.pcart-name { font-weight:700; font-size:0.95rem; }
+.pcart-sub { font-size:0.85rem; color: rgba(0,0,0,0.6); }
+
+.pcart-right { display:flex; flex-direction:column; align-items:flex-end; gap:0.35rem; }
+.pcart-lineprice { font-weight:700; }
+
+.pcart-remove { background: transparent; border: none; color: var(--primary-color, #e63946); cursor: pointer; font-weight:700; font-size:0.85rem; }
+
+.pcart-footer { display:flex; align-items:center; justify-content:space-between; gap:0.5rem; padding-top:0.5rem; border-top:1px solid rgba(0,0,0,0.06); margin-top:0.5rem; }
+.pcart-total { display:flex; gap:0.5rem; align-items:center; }
+.pcart-checkout { background: var(--primary-color, #e63946); color:#fff; border:none; padding:0.5rem 0.8rem; border-radius:8px; cursor:pointer; font-weight:700; }
+.pcart-checkout[disabled] { opacity:0.5; cursor:default; }
+
+@media (max-width: 520px) {
+  .pcart-panel { right: 8px; left: 8px; width: auto; }
+  .pcart-thumb { width:48px; height:40px; }
+}
